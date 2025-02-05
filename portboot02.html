@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2d1010;
+            color: #fff;
+            margin-left: 200px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #0f1f2e;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            margin: 4px 0; /* Reduced gap */
+        }
+
+        .sidebar a:hover {
+            background-color: #41586e;
+        }
+
+        header, section, footer {
+            padding: 20px;
+        }
+
+        .btn-cv {
+            background-color: #120725;
+            color: #001f3f;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 16px;
+        }
+
+        .btn-cv:hover {
+            background-color: #e6e6e6;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 5px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="cv.pdf" class="btn-cv">Download My CV</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="text-white text-center py-5" style="background-color: #134b17;">
+
+        <section id="home"></section>
+        <img src="pic.boot.html.jpg" alt="Profile Picture" class="profile-pic mb-3">
+        <h1>Greetings,I'm Raju Ahmed</h1>
+        <p>CSE Student| Learner</p>
+        <div class="social-icons mt-4">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">I am a beginner website maker, currently learning the basics of web development. I'm diving into HTML, CSS, and a bit of JavaScript to create engaging and interactive web pages. I'm also familiarizing myself with Bootstrap to design responsive and modern layouts. I'm excited to continue growing my skills and building websites as I learn more about this dynamic field.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg- text-white">
+        <h2 class="text-center text-white">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pr.pic.05.html.avif" class="card-img-top" alt="Web Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Project 1</h5>
+                        <p class="card-text">This a HTML baised website.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pr.pic.04.html.avif" class="card-img-top" alt="Data Science Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Project 2</h5>
+                        <p class="card-text">This website is made with CSS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pr.pic.01.html.jpeg" class="card-img-top" alt="Mobile App Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Project 3</h5>
+                        <p class="card-text">This is based on Bootstarp only.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="text-center">Skills</h2>
+        <p class="text-center">As a beginner web developer and gainig skills on HTML,CSS,Java and Bootstrap.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white">
+        <h2 class="text-center text-white">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Your email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <div class="social-icons mb-2">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+        Thank you for visiting my portfolio
+    </footer>
+
+    
+</body>
+</html>
